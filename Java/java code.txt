@@ -1,0 +1,30 @@
+
+ // Simple boiler plate code //
+public class boiler {
+    public static void main (String args[]){
+
+    }
+}
+
+
+// Input boiler plate code //
+import java.util.*;
+public class boiler{
+    public static void main(String arg[]){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        
+        
+    }
+}
+
+// comment //
+/*  */
+
+|| &&
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+Solid Rectangle
+
+import java.util.*;
+ 
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 5;
+       int m = 4;
+       for(int i=0; i<n; i++) {
+           for(int j=0; j<m; j++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+   }
+}
+
+Hallow Rectangle 
+import java.util.*;
+ 
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 5;
+       int m = 4;
+       for(int i=0; i<n; i++) {
+           for(int j=0; j<m; j++) {
+               if(i == 0 || i == n-1 || j == 0 || j == m-1) {
+                   System.out.print("*");
+               } else {
+                   System.out.print(" ");
+               }
+           }
+           System.out.println();
+       }
+   }
+}
+
+import java.util.*;
+public class string{
+    public static void main(String arg[]){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int m = s.nextInt();
+        // // outer loop
+        for(int i = 1; i <= n; i++){
+            // // inner loop
+            for(int j=1; j <= m; j++ ){
+                // // cell -> ( i , j )
+                if(j == m || i == n ||i == 1||j==1){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+3
+import java.util.*;
+ 
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 4;
+      
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=i; j++) {
+                   System.out.print("*");
+           }
+           System.out.println();
+       }
+   }
+}
+
+
+
+/*Inverted Half Pyramid
+Output:- *****
+         ****
+         ***
+         **
+         *
+*/
+import java.util.*;
+public class string{
+    public static void main(String arg[]){
+        try (Scanner s = new Scanner(System.in)) {
+            int n = s.nextInt();
+            // // outer loop
+            for (int i=n;  >= 1; i--){
+               // // inner loop
+                for(int j=1; j<=i; j++ ){
+                    System.out.print("*");
+                }
+            System.out.println();
+            }
+        }
+    }
+}
+
+
+5
+import java.util.*;
+ 
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 4;
+      
+       for(int i=n; i>=1; i--) {
+           for(int j=1; j<i; j++) {
+               System.out.print(" ");
+           }
+ 
+           for(int j=0; j<=n-i; j++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+   }
+}
+
+
+6
+import java.util.*;
+ 
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 5;
+      
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=i; j++) {
+               System.out.print(j);
+           }
+           System.out.println();
+       }
+   }
+}
+
+
+7
+import java.util.*;
+ 
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 5;
+      
+       for(int i=n; i>=1; i--) {
+           for(int j=1; j<=i; j++) {
+               System.out.print(j);
+           }
+           System.out.println();
+       }
+   }
+}
+
+
+/* Print number in adding format 
+Output:- 1
+         2 3
+         4 5 6
+         7 8 9 10
+         11 12 13 14 15
+         16 17 18 19 20 21
+*/
+import java.util.*;
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 5;
+       int number = 1;
+ 
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=i; j++) {
+               System.out.print(number+" ");
+               number++;
+           }
+           System.out.println();
+       }
+   }
+}
+
+
+/* printing O1 in half pyramid
+Output:- 1
+         0 1
+         1 0 1
+         0 1 0 1
+         0 1 0 1 0
+         1 0 1 0 1 0
+*/
+import java.util.*;
+public class Patterns {
+   public static void main(String args[]) {
+       int n = 5;
+ 
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=i; j++) {
+               if((i+j) % 2 == 0) {
+                   System.out.print(1+" ");
+               } else {
+                   System.out.print(0+" ");
+               }
+           }
+           System.out.println();
+       }
+   }
+}
+
+
+
+/* half pyramid with number
+Output:-  1 
+          1 2 
+          1 2 3 
+          1 2 3 4 
+          1 2 3 4 5
+*/
+import java.util.*;
+public class string{
+    public static void main(String arg[]){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        // // outer loop
+        for (int i = 1; i <= n; i++){
+           // // inner loop
+            for(int j = 1; j <=i; j++ ){
+                System.out.print(j+" ");
+            }
+        System.out.println();
+        }
+    }
+}
